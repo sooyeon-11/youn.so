@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamburins StyleGuide</title>
+
+  <link rel="shortcut icon" href="../images/main/tb_favicon.png" type="../../image/x-icon">
+
+  <!-- noto serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/styleguide.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+
+    <button class="img_btn">
+      <span class="text">Source of Image</span>
+    </button><!-- //img_btn -->
+
+    <div class="photo">
+      <img src="../images/sub/sg_tamburins.png" alt="sg_sjoy">
+    </div><!-- //photo -->
+
+    <div class="popup">
+      <div class="inner">
+        <a href="https://www.tamburins.com/kr/">
+          <p>Tamburins</p>
+        </a>
+        <button class="close"></button>
+      </div><!-- //inner -->
+    </div><!-- //popup -->
+
+  </div><!-- //wrap -->
+
+  <script>
+    $(".popup").hide();
+    $(".img_btn").click(function () {
+      $(".popup").fadeIn();
+    });
+    $(".close").click(function () {
+      $(".popup").fadeOut();
+    });
+  </script>
+
+
+</body>
+
+</html>
